@@ -1,9 +1,9 @@
 :root {
-  --green: #5bbeaa;
-  --darkgreen: #3ca690;
-  --beige: #e7e4dd;
-  --black: #000000;
-  --blue: #005c8b;
+  --cyan: #2FB2A5;
+  --orange: #EC6251;
+  --green: #68BB8B;
+  --yellow: #F9BF5D;
+  --salmon: #F39C84;
 
   @custom-media --mobile-viewport only screen and (max-width: 569px);
   @custom-media --mobile-viewport-landscape (orientation: landscape) and (max-width: 569px);
