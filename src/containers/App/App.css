@@ -1,0 +1,9 @@
+@import '../../styles/shared/variables.css';
+
+.app {
+	width: 100vw;
+	height: 100vh;
+	background-image: url('../../assets/black_denim.png');
+	background-repeat: repeat;
+	box-sizing: border-box;
+}
