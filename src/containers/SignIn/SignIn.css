@@ -3,13 +3,19 @@
 .signin {
   display: flex;
   flex-direction: column;
-  align-content: stretch;
+  align-content: center;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   width: 100%;
   padding: 1em;
   box-sizing: border-box;
   height: 100%;
+
+  img {
+    filter: invert();
+    width: 20vw;
+    margin-top: 4em;
+  }
 
   footer {
     width: 100%;

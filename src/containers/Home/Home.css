@@ -1,0 +1,57 @@
+@import '../../styles/shared/variables.css';
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: black;
+
+  .single {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 1em;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      padding: 0 0.5em;
+      margin: 0.5em 0;
+      font-weight: 300;
+    }
+
+    .photo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: flex-start;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 10em;
+      border-bottom: 3px solid var(--green);
+
+      small {
+        display: flex;
+        background-color: var(--green);
+        color: white;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        padding: 3px 8px 3px 6px;
+        margin: 3px 0;
+
+        .icon {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}

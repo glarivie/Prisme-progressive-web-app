@@ -3,6 +3,9 @@ import { Link } from 'react-router';
 import FontAwesome from 'react-fontawesome';
 
 import styles from './SignIn.css';
+import logo from '../../assets/logo.png';
+
+import browserHistory from '../../browserHistory';
 
 class SignIn extends Component {
   state = {
@@ -14,11 +17,17 @@ class SignIn extends Component {
     this.setState({ [type]: value });
   };
 
-  handleSubmit = e => e.preventDefault();
+  handleSubmit = e => {
+    e.preventDefault();
+    browserHistory.push({
+      pathname: '/home',
+    });
+  };
 
   render() {
     return (
       <div className={styles.signin}>
+        <img src={logo} role="presentation" alt="logo prisme" />
         <form onSubmit={this.handleSubmit}>
           <div className={styles.group}>
             <FontAwesome name="envelope-o" className={styles.icon} />
@@ -44,7 +53,7 @@ class SignIn extends Component {
           <small>Pas encore de compte ? <Link to="/signup">Inscrivez-vous</Link></small>
         </form>
         <footer>
-          &copy; Copyright Gazett 2017
+          &copy; Copyright Prisme 2017
         </footer>
       </div>
     );
