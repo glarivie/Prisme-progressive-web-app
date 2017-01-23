@@ -5,6 +5,7 @@ import App from './containers/App';
 import Splash from './containers/Splash';
 import SignIn from './containers/SignIn';
 import Home from './containers/Home';
+import Single from './containers/Single';
 import Page404 from './containers/Page404';
 
 export default (
@@ -12,6 +13,7 @@ export default (
     <IndexRoute component={Splash} />
     <Route path="sign-in" component={SignIn} />
     <Route path="home" component={Home} />
+    <Route path="single" component={Single} />
     <Route path="404" component={Page404} />
     <Redirect from="*" to="404" />
   </Route>
