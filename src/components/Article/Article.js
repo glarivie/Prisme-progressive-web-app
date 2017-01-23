@@ -1,10 +1,11 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 
 import styles from './Article.css';
 import readLater from '../../assets/Lire_plus_tard_gris.svg';
 import playlist from '../../assets/Plus_blanc.svg';
 
-const Article = ({ img, tags, title }) => (
+const Article = ({ img, tags, title, index }) => (
   <div className={styles.single}>
     <div
       className={styles.photo}
@@ -13,7 +14,7 @@ const Article = ({ img, tags, title }) => (
       <div className={styles.mask} />
       <div className={styles.content}>
         <small>{tags[1]}</small>
-        <h3>{title}</h3>
+        <Link to={`/single?id=${index}`}>{title}</Link>
         <div className={styles.actions}>
           <img src={readLater}
             role="presentation"
@@ -27,7 +28,6 @@ const Article = ({ img, tags, title }) => (
           />
         </div>
       </div>
-
     </div>
   </div>
 );
@@ -35,6 +35,7 @@ const Article = ({ img, tags, title }) => (
 Article.propTypes = {
   img: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
