@@ -15,7 +15,7 @@
   padding: 0 0.6em;
   z-index: 42;
 
-  .burger, .later {
+  .burger, .later, .back {
     height: 1.3em;
   }
 }

@@ -4,11 +4,18 @@ import { Link } from 'react-router';
 import styles from './Header.css';
 import burger from '../../assets/burger_noir.svg';
 import readLater from '../../assets/Lire_plus_tard_gris.svg';
+import back from '../../assets/retour.svg';
 
 const Header = ({ singleMode = false }) => (
   <header className={styles.header}>
     {singleMode ? (
-      <Link to="/home">&larr;</Link>
+      <Link to="/home">
+      <img src={back}
+        role="presentation"
+        alt="back"
+        className={styles.back}
+      />
+      </Link>
     ) : (
       <img src={burger}
         role="presentation"
