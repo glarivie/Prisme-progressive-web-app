@@ -5,14 +5,27 @@ import { articles } from '../../constants';
 
 import Header from '../../components/Header';
 import Article from '../../components/Article';
+import LeftMenu from '../../components/LeftMenu';
 
 class Home extends Component {
+  state = { isLeftMenuOpen: false };
+
+  toggleLeftMenu = () =>
+    this.setState({ isLeftMenuOpen: !this.state.isLeftMenuOpen });
+
+  closeLeftMenu = () =>
+    this.setState({ isLeftMenuOpen: false });
 
   render() {
+    const { isLeftMenuOpen } = this.state;
 
     return (
       <div className={styles.homepage}>
-        <Header />
+        <LeftMenu
+          isOpen={isLeftMenuOpen}
+          close={this.closeLeftMenu}
+        />
+        <Header toggleLeftMenu={this.toggleLeftMenu} />
         {articles.map((single, index) => (
           <Article
             key={index}

@@ -1,0 +1,53 @@
+.leftmenu {
+  position: fixed;
+  z-index: 43;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: transparent;
+  transform: translateX(-100vw);
+  transition: transform .5s ease-out;
+  display: flex;
+  flex-direction: row;
+
+  .main {
+    flex-basis: 90%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+
+    .header {
+      padding: 0.5em;
+
+      img {
+        position: absolute;
+        top: 1em;
+        left: 0.9em;
+        width: 1.1em;
+      }
+
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #DDD;
+        padding: 10px 15px 10px 35px;
+
+        &:focus {
+          border-bottom: 1px solid #333;
+        }
+      }
+    }
+  }
+
+  .transparent {
+    background-color: transparent;
+    flex-basis: 10%;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+}

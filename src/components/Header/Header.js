@@ -6,7 +6,7 @@ import burger from '../../assets/burger_noir.svg';
 import readLater from '../../assets/Lire_plus_tard_gris.svg';
 import back from '../../assets/retour.svg';
 
-const Header = ({ singleMode = false }) => (
+const Header = ({ singleMode = false, toggleLeftMenu }) => (
   <header className={styles.header}>
     {singleMode ? (
       <Link to="/home">
@@ -21,6 +21,7 @@ const Header = ({ singleMode = false }) => (
         role="presentation"
         alt="burger menu"
         className={styles.burger}
+        onClick={toggleLeftMenu}
       />
     )}
     <img
@@ -34,6 +35,7 @@ const Header = ({ singleMode = false }) => (
 
 Header.propTypes = {
   singleMode: PropTypes.bool,
+  toggleLeftMenu: PropTypes.func,
 };
 
 export default Header;
