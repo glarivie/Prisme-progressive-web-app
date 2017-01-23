@@ -19,10 +19,10 @@ class SignUp extends Component {
   render() {
     return (
       <div className={styles.signup}>
-        <FontAwesome name="user-o" className={styles.icon} />
         <form>
+          <FontAwesome name="user-o" className={styles.icon} />
           <div className={styles.group}>
-            <label>nom dutilisateur</label>
+            <label>nom d'utilisateur</label>
             <input
               name="username"
               type="text"
@@ -46,7 +46,7 @@ class SignUp extends Component {
             />
           </div>
           <p> En créant votre compte, vous confirmez que vous acceptez les conditions générales d utilisations.</p>
-          <button type="submit">S'inscrire</button>
+          <button type="submit">Suivant</button>
         </form>
       </div>
     )

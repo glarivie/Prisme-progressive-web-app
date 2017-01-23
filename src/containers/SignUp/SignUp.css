@@ -11,8 +11,7 @@
   box-sizing: border-box;
   height: 100%;
 
-  .icon {
-  }
+
 
   form {
     flex-grow: 1;
@@ -22,8 +21,17 @@
     align-content: center;
     justify-content: center;
     box-sizing: border-box;
-    width: 100%;
+    width: 95%;
 
+    label {
+
+    }
+    .icon {
+      position: relative;
+      left: -133px;
+      margin-bottom: 1em;
+      font-size: xx-large;
+    }
     .group {
       width: 100%;
       box-sizing: border-box;
@@ -34,16 +42,18 @@
         box-sizing: border-box;
         outline: none;
         border: none;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
         border-bottom: 1px solid #DDD;
-        padding: 10px 15px 10px 35px;
+        padding: 5px 15px 5px 5px;
 
         &:focus {
           border-bottom: 1px solid #333;
         }
       }
     }
-
+    p {
+      margin: 10px 0px 50px 0px;
+    }
     button {
       width: 100%;
       margin-bottom: 1em;
