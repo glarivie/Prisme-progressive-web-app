@@ -44,7 +44,7 @@ class SignIn extends Component {
           <small>Pas encore de compte ? <Link to="/sign-up">Inscrivez-vous</Link></small>
         </form>
         <footer>
-          &copy; Copyright Gazett 2017
+          &copy; Copyright Prisme 2017
         </footer>
       </div>
     );

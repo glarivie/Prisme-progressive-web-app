@@ -19,6 +19,9 @@ class SignUp extends Component {
   render() {
     return (
       <div className={styles.signup}>
+        <div className={styles.header}>
+          <h1> CREER UN COMPTE </h1>
+        </div>
         <form>
           <FontAwesome name="user-o" className={styles.icon} />
           <div className={styles.group}>
@@ -45,7 +48,10 @@ class SignUp extends Component {
               onChange={({ target: { value } }) => this.handleChange(value, 'password')}
             />
           </div>
-          <p> En créant votre compte, vous confirmez que vous acceptez les conditions générales d utilisations.</p>
+          <div className={styles.text}>
+            En créant votre compte, vous confirmez que vous acceptez les
+            <b> conditions générales d'utilisations</b>.
+          </div>
           <button type="submit">Suivant</button>
         </form>
       </div>
