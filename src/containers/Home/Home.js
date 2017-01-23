@@ -16,6 +16,7 @@ class Home extends Component {
         {articles.map((single, index) => (
           <Article
             key={index}
+            index={index}
             {...single}
           />
         ))}
