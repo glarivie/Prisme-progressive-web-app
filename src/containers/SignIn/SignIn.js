@@ -41,7 +41,7 @@ class SignIn extends Component {
             />
           </div>
           <button type="submit">Connexion</button>
-          <small>Pas encore de compte ? <Link to="/signup">Inscrivez-vous</Link></small>
+          <small>Pas encore de compte ? <Link to="/sign-up">Inscrivez-vous</Link></small>
         </form>
         <footer>
           &copy; Copyright Gazett 2017
