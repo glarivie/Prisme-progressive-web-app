@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import FontAwesome from 'react-fontawesome';
+import { Link } from 'react-router';
 
 import styles from './SignUp.css';
+import profil from '../../assets/profil.svg';
+import retour from '../../assets/retour.svg';
 
 class SignUp extends Component {
   user = {
@@ -19,11 +21,15 @@ class SignUp extends Component {
   render() {
     return (
       <div className={styles.signup}>
-        <div className={styles.header}>
+        <header className={styles.header}>
+          <Link to="/"><img src={retour} alt='Back'/></Link>
           <h1> CREER UN COMPTE </h1>
-        </div>
+        </header>
         <form>
-          <FontAwesome name="user-o" className={styles.icon} />
+          <img src={profil}
+            alt="user icon"
+            className={styles.icon}
+          />
           <div className={styles.group}>
             <label>nom d'utilisateur</label>
             <input
@@ -52,7 +58,7 @@ class SignUp extends Component {
             En créant votre compte, vous confirmez que vous acceptez les
             <b> conditions générales d'utilisations</b>.
           </div>
-          <button type="submit">Suivant</button>
+          <Link to="/fav-select"><button type="submit">Suivant</button></Link>
         </form>
       </div>
     )
