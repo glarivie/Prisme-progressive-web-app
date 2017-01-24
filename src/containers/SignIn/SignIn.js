@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import FontAwesome from 'react-fontawesome';
 
 import styles from './SignIn.css';
-import logo from '../../assets/logo.png';
+// import logo from '../../assets/logo.png';
 
 import browserHistory from '../../browserHistory';
 
@@ -27,7 +27,7 @@ class SignIn extends Component {
   render() {
     return (
       <div className={styles.signin}>
-        <img src={logo} role="presentation" alt="logo prisme" />
+        {/* <img src={logo} role="presentation" alt="logo prisme" /> */}
         <form onSubmit={this.handleSubmit}>
           <div className={styles.group}>
             <FontAwesome name="envelope-o" className={styles.icon} />

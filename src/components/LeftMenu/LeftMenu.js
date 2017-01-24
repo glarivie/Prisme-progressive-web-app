@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
 import styles from './LeftMenu.css';
-import loupe from '../../assets/recherche_gris.svg';
 
 class LeftMenu extends Component {
   static propTypes = {
@@ -25,7 +24,7 @@ class LeftMenu extends Component {
       >
         <div className={styles.main}>
           <div className={styles.header}>
-            <img src={loupe} role="presentation" alt="search icon" />
+            {/* <img src={loupe} role="presentation" alt="search icon" /> */}
             <input
               type="search"
               name="search"

@@ -2,8 +2,6 @@ import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 
 import styles from './Article.css';
-import readLater from '../../assets/Lire_plus_tard_gris.svg';
-import playlist from '../../assets/Plus_blanc.svg';
 
 const Article = ({ img, tags, title, index }) => (
   <div className={styles.single}>
@@ -16,7 +14,7 @@ const Article = ({ img, tags, title, index }) => (
         <small>{tags[1]}</small>
         <Link to={`/single?id=${index}`}>{title}</Link>
         <div className={styles.actions}>
-          <img src={readLater}
+          {/* <img src={readLater}
             role="presentation"
             alt="read later"
             className={styles.later}
@@ -25,7 +23,7 @@ const Article = ({ img, tags, title, index }) => (
             role="presentation"
             alt="add to playlist"
             className={styles.playlist}
-          />
+          /> */}
         </div>
       </div>
     </div>

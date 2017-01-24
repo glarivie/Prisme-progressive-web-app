@@ -4,6 +4,7 @@
   --green: #68BB8B;
   --yellow: #F9BF5D;
   --salmon: #F39C84;
+  --gray: #B2B2B1;
 
   @custom-media --mobile-viewport only screen and (max-width: 569px);
   @custom-media --mobile-viewport-landscape (orientation: landscape) and (max-width: 569px);

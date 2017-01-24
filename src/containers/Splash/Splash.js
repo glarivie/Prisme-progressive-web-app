@@ -1,10 +1,15 @@
 import React from 'react';
-import cx from 'classnames';
 
 import styles from './Splash.css';
-import logo from '../../assets/logo.png';
-
 import browserHistory from '../../browserHistory';
+
+import Loading from '../../components/Loading';
+
+import logo from '../../assets/logo_blanc.svg'
+import top from '../../assets/triangle_haut_blanc_transparent.svg';
+import down from '../../assets/triangle_bas_blanc_transparent.svg';
+import left from '../../assets/triangle_gauche_blanc_transparent.svg';
+import right from '../../assets/triangle_droit_blanc_transparent.svg';
 
 const Splash = () => {
   setTimeout(() => {
@@ -15,18 +20,15 @@ const Splash = () => {
 
   return (
     <div className={styles.splash}>
-      <img src={logo} role="presentation" alt="logo prisme" />
-      <h1>PRISME</h1>
-      <div className={styles['sk-cube-grid']}>
-        <div className={cx(styles['sk-cube'], styles['sk-cube1'])}></div>
-        <div className={cx(styles['sk-cube'], styles['sk-cube2'])}></div>
-        <div className={cx(styles['sk-cube'], styles['sk-cube3'])}></div>
-        <div className={cx(styles['sk-cube'], styles['sk-cube4'])}></div>
-        <div className={cx(styles['sk-cube'], styles['sk-cube5'])}></div>
-        <div className={cx(styles['sk-cube'], styles['sk-cube6'])}></div>
-        <div className={cx(styles['sk-cube'], styles['sk-cube7'])}></div>
-        <div className={cx(styles['sk-cube'], styles['sk-cube8'])}></div>
-        <div className={cx(styles['sk-cube'], styles['sk-cube9'])}></div>
+      <div className={styles.prisme}>
+        <img src={top} className={styles.top} role="presentation" alt="prisme" />
+        <img src={down} className={styles.down} role="presentation" alt="prisme" />
+        <img src={left} className={styles.left} role="presentation" alt="prisme" />
+        <img src={right} className={styles.right} role="presentation" alt="prisme" />
+      </div>
+      <div className={styles.zone}>
+        <img src={logo} role="presentation" alt="logo prisme" />
+        <Loading />
       </div>
     </div>
   );

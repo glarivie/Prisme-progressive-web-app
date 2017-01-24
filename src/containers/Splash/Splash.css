@@ -1,7 +1,7 @@
 .splash {
   width: 100vw;
   height: 100vh;
-  background-color: var(--green);
+  background-color: var(--cyan);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,76 +10,58 @@
   position: relative;
   z-index: 0;
 
-  h1 {
-    font-weight: 200;
-    color: white;
-    font-size: 3em;
-    margin: 10px 0;
-  }
+  .zone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 
-  .sk-cube-grid {
-    width: 40px;
-    height: 40px;
-    margin: 3em auto;
-
-    .sk-cube {
-      width: 33%;
-      height: 33%;
-      background-color: white;
-      float: left;
-      animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-    }
-
-    .sk-cube1 {
-      animation-delay: 0.2s;
-    }
-
-    .sk-cube2 {
-      animation-delay: 0.3s;
-    }
-
-    .sk-cube3 {
-      animation-delay: 0.4s;
-    }
-
-    .sk-cube4 {
-      animation-delay: 0.1s;
-    }
-
-    .sk-cube5 {
-      animation-delay: 0.2s;
-    }
-
-    .sk-cube6 {
-      animation-delay: 0.3s;
-    }
-
-    .sk-cube7 {
-      animation-delay: 0s;
-    }
-
-    .sk-cube8 {
-      animation-delay: 0.1s;
-    }
-
-    .sk-cube9 {
-      animation-delay: 0.2s;
+    img {
+      width: 32vw;
     }
   }
-}
 
-@-webkit-keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    transform: scale3D(1, 1, 1);
-  } 35% {
-    transform: scale3D(0, 0, 1);
-  }
-}
+  .prisme {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 
-@keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    transform: scale3D(1, 1, 1);
-  } 35% {
-    transform: scale3D(0, 0, 1);
+    .top {
+      position: absolute;
+      top: -0.4em;
+      left: 0;
+      width: 100%;
+    }
+
+    .down {
+      position: absolute;
+      right: 0;
+      bottom: -0.4em;
+      width: 100%;
+    }
+
+    .left {
+      position: absolute;
+      top: 0;
+      left: -0.4em;
+      height: 100%;
+    }
+
+    .right {
+      position: absolute;
+      bottom: 0;
+      right: -0.4em;
+      height: 100%;
+    }
   }
 }
