@@ -2,7 +2,7 @@ import React from 'react';
 
 const prisme1 = [{
     title: 'Nombre de votants à la primaire de gauche : il y a (toujours) un problème',
-    img: '../assets/prism/p1-1.jpg',
+    img: 'http://referentiel.nouvelobs.com/file/15857046-nombre-de-votants-a-la-primaire-de-gauche-il-y-a-toujours-un-probleme.jpg',
     author: 'Paul Laubacher',
     categorie: 'Politique',
     source: 'NouvelObs',
@@ -73,7 +73,7 @@ const prisme1 = [{
       </article>,
   }, {
     title: "Primaire à gauche : le PS soupçonné d'avoir manipulé les chiffres du scrutin",
-    img: '../assets/prism/p1-2.jpg',
+    img: 'http://cdn1-europe1.new2.ladmedia.fr/var/europe1/storage/images/europe1/politique/calendrier-candidats-scrutin-cinq-choses-a-savoir-sur-la-primaire-de-gauche-2922989/30201746-1-fre-FR/Calendrier-candidats-scrutin-Cinq-choses-a-savoir-sur-la-primaire-de-gauche.jpg',
     author: 'Arthur Berdah , François-Xavier Bourmaud',
     categorie: 'Politique',
     source: 'Figaro',
@@ -88,7 +88,7 @@ const prisme1 = [{
       </article>
     }, {
       title: "Primaire à gauche : le PS manipule les résultats puis plaide une 'connerie'",
-      img: '../assets/prism/p1-3.jpg',
+      img: 'http://www.marianne.net/sites/default/files/14214-100249423.jpg',
       author: 'Etienne Girard',
       categorie: 'Politique',
       source: 'Marianne',
@@ -114,7 +114,7 @@ const prisme1 = [{
         </article>
       }, {
         title: "Primaire de la gauche : les derniers résultats présentés sont… faux",
-        img: '../assets/prism/p1-4.jpg',
+        img: 'http://cdn.konbini.com/wp-content/blogs.dir/3/files/2017/01/ok-capture-decran-2017-01-23-a-13.53.44.jpg',
         author: 'Cyrielle Bedu',
         categorie: 'Politique',
         source: 'Konbini',
@@ -134,7 +134,7 @@ const prisme1 = [{
           </article>
         }, {
           title: "Résultats de la primaire à gauche : retour sur une journée de confusion et de polémique",
-          img: '../assets/prism/p1-5.jpg',
+          img: 'http://media.rtl.fr/cache/zIQ6-PENzEeUQgK73Zox3g/795v530-0/online/image/2014/1010/7774762498_des-drapeaux-du-parti-socialiste.jpg',
           author: 'NC',
           categorie: 'Politique',
           source: 'Monde',
