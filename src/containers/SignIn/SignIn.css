@@ -11,9 +11,8 @@
   box-sizing: border-box;
   height: 100%;
 
-  img {
-    filter: invert();
-    width: 20vw;
+  .logo {
+    width: 32vw;
     margin-top: 4em;
   }
 
@@ -42,11 +41,14 @@
       width: 100%;
       box-sizing: border-box;
       position: relative;
+      z-index: 0;
 
       .icon {
         position: absolute;
-        top: 9px;
+        top: 10px;
         left: 6px;
+        max-height: 1.1em;
+        z-index: 1;
       }
 
       input {
@@ -73,7 +75,12 @@
       border: 2px solid var(--green);
       background-color: transparent;
       border-radius: 20px;
-      // box-shadow: 1px 1px var(--green);
+    }
+
+    small {
+      a {
+
+      }
     }
   }
 }

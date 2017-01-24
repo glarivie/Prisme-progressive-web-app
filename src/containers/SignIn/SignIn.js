@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import FontAwesome from 'react-fontawesome';
 
 import styles from './SignIn.css';
-// import logo from '../../assets/logo.png';
+
+import envelope from '../../assets/enveloppe_noir.svg';
+import lock from '../../assets/cadenas_noir.svg';
+import logo from '../../assets/logo_noir.svg';
 
 import browserHistory from '../../browserHistory';
 
@@ -27,10 +29,15 @@ class SignIn extends Component {
   render() {
     return (
       <div className={styles.signin}>
-        {/* <img src={logo} role="presentation" alt="logo prisme" /> */}
+        <img
+          src={logo}
+          role="presentation"
+          alt="logo prisme"
+          className={styles.logo}
+        />
         <form onSubmit={this.handleSubmit}>
           <div className={styles.group}>
-            <FontAwesome name="envelope-o" className={styles.icon} />
+            <img src={envelope} role="presentation" className={styles.icon} />
             <input
               autoComplete="off"
               name="mail"
@@ -40,7 +47,7 @@ class SignIn extends Component {
             />
           </div>
           <div className={styles.group}>
-            <FontAwesome name="lock" className={styles.icon} />
+            <img src={lock} role="presentation" className={styles.icon} />
             <input
               autoComplete="new-password"
               name="password"
