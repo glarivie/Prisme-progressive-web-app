@@ -58,7 +58,7 @@ class SignUp extends Component {
             En créant votre compte, vous confirmez que vous acceptez les
             <b> conditions générales d'utilisations</b>.
           </div>
-          <Link to="/fav-select"><button type="submit">Suivant</button></Link>
+          <button type="submit">S'inscrire</button>
         </form>
       </div>
     )

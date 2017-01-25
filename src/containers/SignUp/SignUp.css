@@ -81,8 +81,6 @@
         font-weight: 400;
       }
     }
-    a {
-      width: 100%;
       button {
         width: 100%;
         margin-bottom: 1em;
@@ -93,6 +91,5 @@
         background-color: transparent;
         border-radius: 20px;
       }
-    }
   }
 }
