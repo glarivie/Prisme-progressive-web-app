@@ -41,6 +41,12 @@ class Header extends Component {
           role="presentation"
           onClick={this.goBack}
         />
+        {title && (
+          <div className={styles.title}>
+            {prisme && <span>/\</span>}
+            <h4>{title}</h4>
+          </div>
+        )}
         {options && (
           <img
             src={dots}

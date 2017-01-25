@@ -8,6 +8,7 @@ import Prismes from './containers/Prismes';
 import Prisme from './containers/Prisme';
 import Single from './containers/Single';
 import Page404 from './containers/Page404';
+import SignUp from './containers/SignUp';
 
 export default (
   <Route path="/" component={App}>
@@ -16,6 +17,7 @@ export default (
     <Route path="prismes" component={Prismes} />
     <Route path="prisme/:id" component={Prisme} />
     <Route path="single" component={Single} />
+    <Route path="sign-up" component={SignUp} />
     <Route path="404" component={Page404} />
     <Redirect from="*" to="404" />
   </Route>
