@@ -1,5 +1,4 @@
 .prisme {
-  margin-top: 3.5em;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -15,6 +14,6 @@
   .articles {
     display: flex;
     flex-direction: column;
-    padding: 1em;
+    padding: 6em 1em 1em 1em;
   }
 }

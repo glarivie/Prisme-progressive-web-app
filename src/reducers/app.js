@@ -7,6 +7,11 @@ const appReducer = (state = {}, action) => {
         ...state,
         width: action.data,
       }
+    case 'TOGGLE_NAVIGATION':
+      return {
+        ...state,
+        isNavOpen: action.data,
+      }
     default:
       return state;
   }
