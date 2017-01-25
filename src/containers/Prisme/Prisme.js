@@ -5,7 +5,7 @@ import prismes from '../../constants';
 
 import Header from '../../components/Header';
 import Article from '../../components/Article';
-import triangle from '../../assets/triangle_haut_couleurs_transparent.svg';
+import Triangles from '../../components/Triangles';
 
 class Prisme extends Component {
   static propTypes = {
@@ -19,7 +19,7 @@ class Prisme extends Component {
     return (
       <div className={styles.prisme}>
         <Header options />
-        <img src={triangle} role="presentation" className={styles.triangle} />
+        <Triangles kind="transparent" prisme={parseInt(id, 10)} />
         <div className={styles.articles}>
           {current.map((single, index) => (
             <Article

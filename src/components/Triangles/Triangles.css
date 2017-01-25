@@ -1,7 +1,7 @@
 .prismes {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 0;
@@ -10,25 +10,25 @@
     position: absolute;
     z-index: 1;
 
-    &.top {
+    &.triangle0 {
       top: 0;
       left: -0.1em;
       width: 100%;
     }
 
-    &.down {
+    &.triangle1 {
       right: 0;
       bottom: -0.4em;
       width: 100%;
     }
 
-    &.left {
+    &.triangle2 {
       top: 0;
       left: -0.3em;
       height: 100%;
     }
 
-    &.right {
+    &.triangle3 {
       bottom: 0;
       right: -0.4em;
       height: 100%;
