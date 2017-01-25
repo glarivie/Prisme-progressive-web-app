@@ -7,9 +7,18 @@
   align-content: center;
   justify-content: center;
   background-color: white;
+  position: relative;
+  z-index: 2;
 
   .logo, h2 {
     margin-bottom: 1em;
     font-weight: 200;
+    position: relative;
+    z-index: 2;
+  }
+
+  a {
+    position: relative;
+    z-index: 2;
   }
 }
