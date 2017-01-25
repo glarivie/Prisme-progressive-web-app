@@ -2,7 +2,7 @@ import React from 'react';
 
 const prisme2 = [{
     title: "Fessenheim : \"C'est une grosse opération d'enfumage\", dénonce Jadot",
-    img: '../assets/prism/p2-1-1.png',
+    img: require('../assets/prism/p2-1-1.png'),
     author: 'Marc-Olivier Fogiel, Claire Gaveau',
     category: 'Environnement',
     source: 'RTL',
@@ -15,7 +15,7 @@ const prisme2 = [{
       </article>
     }, {
       title: "À Fessenheim, Sarkozy tire à boulets rouges contre le projet de fermeture du site",
-      img: '../assets/logo/figaro.png',
+      img: require('../assets/logo/figaro.png'),
       author: 'Charles Jaigu',
       category: 'Environnement',
       source: 'Figaro',
@@ -56,7 +56,7 @@ const prisme2 = [{
       </article>
     }, {
       title: "Fessenheim : une fermeture sans cesse repoussée",
-      img: '../assets/logo/francetv.png',
+      img: require('../assets/logo/francetv.png'),
       author: 'Louis San',
       category: 'Environnement',
       source: 'Francetv',

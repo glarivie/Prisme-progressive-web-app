@@ -84,7 +84,7 @@ const prisme3 = [{
       </article>
     }, {
       title: "Montebourg attaque le revenu universel : \"T'as pas le droit, c'est pas sérieux\", réplique Hamon",
-      img: '../assets/logo/rtl.png',
+      img: require('../assets/logo/rtl.png'),
       author: 'Ludovic Galtier',
       category: 'Social',
       source: 'RTL',
