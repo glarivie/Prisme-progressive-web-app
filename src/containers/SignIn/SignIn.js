@@ -22,7 +22,7 @@ class SignIn extends Component {
   handleSubmit = e => {
     e.preventDefault();
     browserHistory.push({
-      pathname: '/home',
+      pathname: '/prismes',
     });
   };
 

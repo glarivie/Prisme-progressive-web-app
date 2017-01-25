@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 
 import styles from './Splash.css';
 import browserHistory from '../../browserHistory';
@@ -16,7 +17,7 @@ const Splash = () => {
     browserHistory.push({
       pathname: '/sign-in',
     });
-  }, 2000);
+  }, _.random(2000, 3000));
 
   return (
     <div className={styles.splash}>

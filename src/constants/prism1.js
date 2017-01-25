@@ -4,7 +4,7 @@ const prisme1 = [{
     title: 'Nombre de votants à la primaire de gauche : il y a (toujours) un problème',
     img: 'http://referentiel.nouvelobs.com/file/15857046-nombre-de-votants-a-la-primaire-de-gauche-il-y-a-toujours-un-probleme.jpg',
     author: 'Paul Laubacher',
-    categorie: 'Politique',
+    category: 'Politique',
     source: 'NouvelObs',
     content:
       <article>
@@ -75,7 +75,7 @@ const prisme1 = [{
     title: "Primaire à gauche : le PS soupçonné d'avoir manipulé les chiffres du scrutin",
     img: 'http://cdn1-europe1.new2.ladmedia.fr/var/europe1/storage/images/europe1/politique/calendrier-candidats-scrutin-cinq-choses-a-savoir-sur-la-primaire-de-gauche-2922989/30201746-1-fre-FR/Calendrier-candidats-scrutin-Cinq-choses-a-savoir-sur-la-primaire-de-gauche.jpg',
     author: 'Arthur Berdah , François-Xavier Bourmaud',
-    categorie: 'Politique',
+    category: 'Politique',
     source: 'Figaro',
     content:
       <article>
@@ -90,7 +90,7 @@ const prisme1 = [{
       title: "Primaire à gauche : le PS manipule les résultats puis plaide une 'connerie'",
       img: 'http://www.marianne.net/sites/default/files/14214-100249423.jpg',
       author: 'Etienne Girard',
-      categorie: 'Politique',
+      category: 'Politique',
       source: 'Marianne',
       content:
         <article>
@@ -116,7 +116,7 @@ const prisme1 = [{
         title: "Primaire de la gauche : les derniers résultats présentés sont… faux",
         img: 'http://cdn.konbini.com/wp-content/blogs.dir/3/files/2017/01/ok-capture-decran-2017-01-23-a-13.53.44.jpg',
         author: 'Cyrielle Bedu',
-        categorie: 'Politique',
+        category: 'Politique',
         source: 'Konbini',
         content:
           <article>
@@ -136,7 +136,7 @@ const prisme1 = [{
           title: "Résultats de la primaire à gauche : retour sur une journée de confusion et de polémique",
           img: 'http://media.rtl.fr/cache/zIQ6-PENzEeUQgK73Zox3g/795v530-0/online/image/2014/1010/7774762498_des-drapeaux-du-parti-socialiste.jpg',
           author: 'NC',
-          categorie: 'Politique',
+          category: 'Politique',
           source: 'Monde',
           content:
           <article>

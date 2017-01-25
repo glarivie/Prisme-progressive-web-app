@@ -1,5 +1,5 @@
-import articles from './articles';
+import prism1 from './prism1';
 
-export {
-  articles,
-};
+export default [
+  prism1,
+];

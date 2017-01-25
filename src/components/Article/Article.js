@@ -3,29 +3,15 @@ import { Link } from 'react-router';
 
 import styles from './Article.css';
 
-const Article = ({ img, tags, title, index }) => (
+const Article = ({ index, title, img, category, source }) => (
   <div className={styles.single}>
     <div
       className={styles.photo}
       style={{ backgroundImage: `url('${img}')` }}
-    >
-      <div className={styles.mask} />
-      <div className={styles.content}>
-        <small>{tags[1]}</small>
-        <Link to={`/single?id=${index}`}>{title}</Link>
-        <div className={styles.actions}>
-          {/* <img src={readLater}
-            role="presentation"
-            alt="read later"
-            className={styles.later}
-          />
-          <img src={playlist}
-            role="presentation"
-            alt="add to playlist"
-            className={styles.playlist}
-          /> */}
-        </div>
-      </div>
+    />
+    <div className={styles.right}>
+      <h2>{title}</h2>
+      <small>Sourcé pour vous du <span>{source}</span></small>
     </div>
   </div>
 );
@@ -34,7 +20,8 @@ Article.propTypes = {
   img: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  category: PropTypes.string.isRequired,
+  source: PropTypes.string.isRequired,
 };
 
 export default Article;
