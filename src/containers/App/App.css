@@ -1,7 +1,17 @@
-@import '../../styles/shared/variables.css';
-
 .app {
 	width: 100vw;
 	height: 100vh;
 	box-sizing: border-box;
+
+  main {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .3);
+    transition: transform .3s ease-out;
+
+    &.isNavOpen {
+      transform: translateX(-90%);
+    }
+  }
 }

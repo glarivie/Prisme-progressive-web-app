@@ -12,14 +12,6 @@ class Prisme extends Component {
     params: PropTypes.object.isRequired,
   };
 
-  state = { isLeftMenuOpen: false };
-
-  toggleLeftMenu = () =>
-    this.setState({ isLeftMenuOpen: !this.state.isLeftMenuOpen });
-
-  closeLeftMenu = () =>
-    this.setState({ isLeftMenuOpen: false });
-
   render() {
     const { params: { id } } = this.props;
     const current = prismes[id];

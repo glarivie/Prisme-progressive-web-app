@@ -4,6 +4,13 @@ const updateWindowWidth = width => async dispatch =>
     data: width,
   });
 
+const toggleNav = isNavOpen => async dispatch =>
+  dispatch({
+    type: 'TOGGLE_NAVIGATION',
+    data: isNavOpen,
+  });
+
 export default {
   updateWindowWidth,
+  toggleNav,
 };
