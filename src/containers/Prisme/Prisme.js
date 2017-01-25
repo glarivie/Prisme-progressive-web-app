@@ -19,7 +19,7 @@ class Prisme extends Component {
     return (
       <div className={styles.prisme}>
         <Header options />
-        <img src={triangle} role="presentation" className={styles.tri} />
+        <img src={triangle} role="presentation" className={styles.triangle} />
         <div className={styles.articles}>
           {current.map((single, index) => (
             <Article

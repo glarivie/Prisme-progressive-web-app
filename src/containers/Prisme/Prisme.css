@@ -4,9 +4,9 @@
   width: 100%;
   box-sizing: border-box;
 
-  .tri {
+  .triangle {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
   }

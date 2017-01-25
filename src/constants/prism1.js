@@ -88,7 +88,7 @@ const prisme1 = [{
       </article>
     }, {
       title: "Primaire à gauche : le PS manipule les résultats puis plaide une 'connerie'",
-      img: 'http://www.marianne.net/sites/default/files/14214-100249423.jpg',
+      img: require('../assets/logo/marianne.png'),
       author: 'Etienne Girard',
       category: 'Politique',
       source: 'Marianne',

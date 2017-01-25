@@ -37,6 +37,11 @@
       box-sizing: border-box;
       position: relative;
 
+      label {
+        color: #AAA;
+        font-size: small;
+      }
+
       input {
         width: 100%;
         box-sizing: border-box;
