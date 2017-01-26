@@ -13,7 +13,7 @@ const brands = {
   Echos: require('../assets/brands/icone_echos.png'),
   Tribune: require('../assets/brands/vignette_latribune.png'),
   JDN: require('../assets/brands/vignette_jdn.png'),
-  Atelier: '',
+  Atelier: require('../assets/brands/vignette_latelier.png'),
   Croix: require('../assets/brands/Vignette_lacroix.png'),
 };
 
