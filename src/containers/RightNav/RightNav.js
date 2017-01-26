@@ -1,14 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import _ from 'lodash';
 
 import styles from './RightNav.css';
 import heart from '../../assets/coeur_blanc.svg';
 import loupe from '../../assets/loupe_blanc.svg';
+import FavoriteArticle from '../../components/FavoriteArticle';
 
 class RightNav extends Component {
-
+  static propTypes = {
+    dispatch: PropTypes.func.isRequired,
+    favorites: PropTypes.object.isRequired,
+  };
 
   render() {
+    const { favorites } = this.props;
+
     return (
       <div className={styles.nav}>
         <div className={styles.inner}>
@@ -26,6 +33,16 @@ class RightNav extends Component {
               <img alt="heart" src={heart} role="presentation" />
               <h4>Favoris</h4>
             </div>
+            <div className={styles.favorites}>
+              {!!favorites && _.map(favorites, prisme =>
+                _.map(prisme, (article, index) => (
+                  <FavoriteArticle
+                    key={index}
+                    {...article}
+                  />
+                ))
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -33,4 +50,8 @@ class RightNav extends Component {
   }
 }
 
-export default connect()(RightNav);
+const mapStateToProps = ({ user }) => ({
+  favorites: _.get(user, 'favorites', {}),
+});
+
+export default connect(mapStateToProps)(RightNav);
