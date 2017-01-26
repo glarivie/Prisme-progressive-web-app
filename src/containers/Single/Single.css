@@ -18,6 +18,21 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    align-content: stretch;
+    justify-content: space-between;
+
+    .brand {
+      width: 2.6em;
+      border-radius: 0.4em;
+      margin: 0.5em;
+    }
+
+    .heart {
+      width: 1.7em;
+      margin: 0.7em 0.5em;
+    }
   }
 
   .content {
@@ -28,6 +43,34 @@
     z-index: 1;
     padding: 1em;
     line-height: 1.45em;
+
+    .source {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .brand {
+        width: 1.9em;
+        border-radius: 0.4em;
+      }
+
+      .heart {
+        width: 1.4em;
+      }
+
+      .credit {
+        display: flex;
+        flex-direction: column;
+
+        small {
+          line-height: 1.2em;
+          color: var(--gray);
+        }
+      }
+    }
 
     .triangle {
       position: absolute;
