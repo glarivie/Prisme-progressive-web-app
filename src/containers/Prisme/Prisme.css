@@ -12,5 +12,12 @@
     padding: 6em 1em 1em 1em;
     position: relative;
     z-index: 1;
+
+    small {
+      color: var(--yellow);
+      font-weight: 500;
+      font-size: 0.95em;
+      margin-bottom: 1em;
+    }
   }
 }
