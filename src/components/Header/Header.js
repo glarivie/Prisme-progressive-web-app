@@ -7,6 +7,7 @@ import browserHistory from '../../browserHistory';
 
 import back from '../../assets/retour_noir.svg';
 import dots from '../../assets/troispoints_noir.svg';
+import triangle from '../../assets/triangle_titre_noir.svg';
 
 import actions from '../../actions';
 
@@ -46,10 +47,18 @@ class Header extends Component {
           src={back}
           role="presentation"
           onClick={this.goBack}
+          className={styles.navIcons}
         />
         {title && (
           <div className={styles.title}>
-            {prisme && <span>/\</span>}
+            {prisme && (
+              <img
+                src={triangle}
+                role="presentation"
+                alt="triangle"
+                className={styles.prisme}
+              />
+            )}
             <h4>{title}</h4>
           </div>
         )}
@@ -58,6 +67,7 @@ class Header extends Component {
             src={dots}
             role="presentation"
             onClick={this.toggleNav}
+            className={styles.navIcons}
           />
         )}
       </header>

@@ -4,10 +4,16 @@ import styles from './Single.css';
 import Header from '../../components/Header';
 
 import prismes from '../../constants';
+import data from '../../constants/data';
 
 const Single = ({ location: { query: { article, prisme } } }) => (
   <div className={styles.single}>
-    <Header pathname={`/prisme/${prisme}`} options />
+    <Header
+      pathname={`/prisme/${prisme}`}
+      title={data[prisme].name}
+      options
+      prisme
+    />
     <div
       className={styles.image}
       style={{ backgroundImage: `url('${prismes[prisme][article].img}')` }}
