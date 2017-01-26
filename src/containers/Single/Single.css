@@ -51,6 +51,9 @@
         font-weight: 500;
       }
 
+      img {
+        width: 50%;
+      }
       h2 {
         margin: 0.1em 0 0.4em 0;
         font-weight: 600;
