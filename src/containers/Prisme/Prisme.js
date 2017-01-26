@@ -43,7 +43,6 @@ class Prisme extends Component {
         <Triangles kind="transparent" prisme={parseInt(id, 10)} />
         <div className={styles.articles}>
           <NextPrisme id={parseInt(id, 10)} />
-          <small>#{data[id].category}</small>
           {current.map((single, index) => (
             <Article
               key={index}
