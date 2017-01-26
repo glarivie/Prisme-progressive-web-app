@@ -7,16 +7,14 @@ const Article = ({ index, title, img, category, source, goToSingle }) => (
     className={styles.single}
     onClick={() => goToSingle(index)}
   >
-    <span>#{category}</span>
-    <div className={styles.content}>
-      <div
-        className={styles.photo}
-        style={{ backgroundImage: `url('${img}')` }}
-      />
-      <div className={styles.right}>
-        <h2>{title}</h2>
-        <small>Sourcé pour vous du <span>{source}</span></small>
-      </div>
+    <div
+      className={styles.photo}
+      style={{ backgroundImage: `url('${img}')` }}
+    />
+    <div className={styles.right}>
+      <small className={styles.category}>#{category}</small>
+      <h2>{title}</h2>
+      <small>Sourcé pour vous du <span>{source}</span></small>
     </div>
   </div>
 );

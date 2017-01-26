@@ -9,7 +9,7 @@
   .articles {
     display: flex;
     flex-direction: column;
-    padding: 4.5em 1em 1em 1em;
+    padding: 4em 1em 1em 1em;
     position: relative;
     z-index: 1;
 

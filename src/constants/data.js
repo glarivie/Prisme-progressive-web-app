@@ -8,8 +8,8 @@ const data = [{
   name: 'REVENU UNIVERSEL',
   category: 'social',
 }, {
-  name: '',
-  category: '',
+  name: 'SMART CITIES',
+  category: 'économie',
 }];
 
 export default data;

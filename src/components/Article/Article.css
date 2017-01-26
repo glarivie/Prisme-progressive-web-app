@@ -1,46 +1,40 @@
 .single {
-  span {
-    color: var(--yellow);
-    font-size: 0.8em;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1em;
+
+  .photo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 90px;
+    height: 90px;
+    margin-right: 1em;
   }
 
-  .content {
+  .right {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 1em;
+    flex-direction: column;
 
-    &:last-of-type {
-      margin-bottom: 0;
+    .category {
+      color: var(--yellow);
+      margin: 0 0 0.2em 0;
     }
 
-    .photo {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-width: 100px;
-      height: 100px;
-      margin-right: 1em;
+    h2 {
+      margin: 0;
+      font-weight: 300;
+      font-size: 1em;
     }
 
-    .right {
-      display: flex;
-      flex-direction: column;
+    small {
+      margin-top: 0.6em;
+      font-size: 0.75em;
+      color: var(--gray);
 
-      h2 {
-        margin: 0;
-        font-weight: 300;
-        font-size: 1.05em;
-      }
-
-      small {
-        margin-top: 0.6em;
-        font-size: 0.75em;
-        color: var(--gray);
-
-        span {
-          color: var(--green);
-        }
+      span {
+        color: var(--green);
       }
     }
   }
