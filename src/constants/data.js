@@ -3,7 +3,7 @@ const data = [{
   category: 'politique',
 }, {
   name: 'FESSENHEIM',
-  category: 'environement',
+  category: 'environnement',
 }, {
   name: 'REVENU UNIVERSEL',
   category: 'social',
