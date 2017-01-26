@@ -15,6 +15,14 @@ class SignIn extends Component {
     password: '',
   };
 
+  componentDidMount() {
+    document.body.style.overflow = 'hidden';
+  }
+
+  componentWillUnmount() {
+    document.body.style.overflow = 'visible';
+  }
+
   handleChange = (value, type) => {
     this.setState({ [type]: value });
   };

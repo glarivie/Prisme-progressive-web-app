@@ -10,7 +10,7 @@ const NextPrisme = ({ id }) => (
     {_.times(4, index => (
       <Link
         key={index}
-        to={`/prisme/${id}`}
+        to={`/prisme/${index}`}
         className={cx({
           [styles.dot]: true,
           [styles.active]: _.isEqual(index, id),
