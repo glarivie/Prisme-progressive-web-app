@@ -1,4 +1,6 @@
 import React from 'react';
+import result1 from '../assets/prism/p1-1-1.png';
+import result2 from '../assets/prism/p1-1-2.png';
 
 const prisme1 = [{
     title: 'Nombre de votants à la primaire de gauche : il y a (toujours) un problème',
@@ -17,7 +19,7 @@ const prisme1 = [{
         <p>Rebelote, le site est de nouveau actualisé. Cette fois-ci, c'est le nombre de votants qui récupère une voix : on passe donc à une participation de 1.601.139 votants... Et l'on sent comme une odeur de manipulation des chiffres. Mais les problèmes pour le Parti socialiste ne s'arrêtent pas là.</p>
         <h3>La répartition des voix</h3>
         <p>Entre le nombre de voix obtenues par chaque candidat à 00h45 et le nombre de voix obtenues à 10 heures, il y a exactement 352.013 votants en plus. La grande question porte sur la répartition des voix entre chaque candidat.</p>
-        <img  alt='results' src='../assets/prism/p1-1-1.png' />
+        <img  alt='results' src={result1} />
         <p>Or on peut observer que la répartition des 352.013 voix, censées être comptabilisées, suit en réalité les mêmes pourcentages que les résultats de 00h45, qui étaient les suivants :</p>
         <ul>
           <li>Benoît Hamon : 36,35%</li>
@@ -29,7 +31,7 @@ const prisme1 = [{
           <li>Jean-Luc Bennahmias : 1,01 %</li>
         </ul>
         <p>Par ailleurs, si on lit les chiffres en valeurs relatives, on remarque que l'apport de voix pour chaque candidat entre 00h45 et 10 heures correspond à 28% de son total de voix à 10 heures, et à 21% de son total des voix à 00h45.</p>
-        <img  alt='results' src='../assets/prism/p1-1-2.png' />
+        <img  alt='results' src={result2} />
         <p>Vous avez dit bizarre ? Pour mieux comprendre, cela signifie que les voix se sont réparties de façon égale entre les candidats, en fonction de leur score. Statistiquement très improbable.</p>
         <h3>Le "bug"</h3>
         <p>Interrogé par la rubrique Désintox de "Libération", Christophe Borgel, président du comité d’organisation de la primaire, évoque un bug pour expliquer ces résultats :</p>
