@@ -11,6 +11,10 @@ const brands = {
   Europe1: require('../assets/brands/icone_europe1.png'),
   Slate: require('../assets/brands/vignette_Slate.png'),
   Echos: require('../assets/brands/icone_echos.png'),
+  Tribune: require('../assets/brands/vignette_latribune.png'),
+  JDN: require('../assets/brands/vignette_jdn.png'),
+  Atelier: '',
+  Croix: require('../assets/brands/Vignette_lacroix.png'),
 };
 
 export default brands;
