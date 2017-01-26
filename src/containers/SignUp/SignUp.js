@@ -38,22 +38,27 @@ class SignUp extends Component {
             <input
               name="username"
               type="text"
+              placeholder="Entrez votre nom d'utilisateur"
               onChange={({ target: { value } }) => this.handleChange(value, 'name')}
             />
           </div>
           <div className={styles.group}>
             <label>email</label>
             <input
+              autoComplete="off"
               name="mail"
               type="email"
+              placeholder="Entrez votre adresse e-mail"
               onChange={({ target: { value } }) => this.handleChange(value, 'mail')}
             />
           </div>
           <div className={styles.group}>
           <label>mot de passe</label>
             <input
+              autoComplete="new-password"
               name="password"
               type="password"
+              placeholder="Entrez votre mot de passe"
               onChange={({ target: { value } }) => this.handleChange(value, 'password')}
             />
           </div>
