@@ -7,6 +7,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family: 'Roboto', sans-serif;
   color: #333;
+  background-color: var(--green);
 }
 
 a {

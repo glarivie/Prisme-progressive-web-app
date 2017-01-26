@@ -6,7 +6,6 @@ import data from '../../constants/data';
 
 import Header from '../../components/Header';
 import Article from '../../components/Article';
-import Triangles from '../../components/Triangles';
 import NextPrisme from '../../components/NextPrisme';
 
 import browserHistory from '../../browserHistory';
@@ -40,7 +39,6 @@ class Prisme extends Component {
           options
           prisme
         />
-        <Triangles kind="transparent" prisme={parseInt(id, 10)} />
         <div className={styles.articles}>
           <NextPrisme id={parseInt(id, 10)} />
           {current.map((single, index) => (
