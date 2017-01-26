@@ -5,7 +5,6 @@
   width: 100vw;
   height: 3em;
   background-color: white;
-  /*border-bottom: 1px solid black;*/
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -17,10 +16,13 @@
 
   img {
     height: 1em;
+    position: relative;
+    z-index: 44;
   }
 
   .title {
     position: absolute;
+    z-index: 43;
     top: 0;
     left: 0;
     display: flex;

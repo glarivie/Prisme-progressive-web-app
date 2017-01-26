@@ -12,6 +12,7 @@
   box-sizing: border-box;
   background-color: white;
   height: 100vh;
+  position: relative;
 
   form {
     flex-grow: 1;

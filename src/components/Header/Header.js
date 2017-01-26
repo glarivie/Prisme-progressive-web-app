@@ -17,6 +17,7 @@ class Header extends Component {
     prisme: PropTypes.bool,
     dispatch: PropTypes.func.isRequired,
     isNavOpen: PropTypes.bool,
+    pathname: PropTypes.string.isRequired,
   };
 
   static defaultProps = {
@@ -24,7 +25,10 @@ class Header extends Component {
     prisme: false,
   };
 
-  goBack = () => browserHistory.goBack();
+  goBack = () => {
+    const { pathname } = this.props;
+    browserHistory.push({ pathname });
+  };
 
   toggleNav = () => {
     const { isNavOpen, dispatch } = this.props;

@@ -1,5 +1,7 @@
 .single {
-  width: 100vw;
+  width: 100%;
+  position: relative;
+  background-color: white;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -41,17 +43,17 @@
 
     .text {
       position: relative;
-      top: -7vh;
+      top: -6vh;
       z-index: 2;
 
       small {
-        color: var(--orange);
-        border-bottom: 1px solid var(--orange);
+        color: var(--yellow);
+        font-weight: 500;
       }
 
       h2 {
-        margin: 0.4em 0;
-        font-weight: 400;
+        margin: 0.1em 0 0.4em 0;
+        font-weight: 600;
         font-size: 1.4em;
         line-height: 1.1em;
       }

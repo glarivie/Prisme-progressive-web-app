@@ -1,31 +1,29 @@
 import React, { PropTypes } from 'react';
 
 import styles from './Single.css';
-import { articles } from '../../constants';
-
 import Header from '../../components/Header';
 
-const Single = ({ location: { query: { id } } }) => {
-  const { title, img, content, tags } = articles[id];
+import prismes from '../../constants';
 
-  return (
-    <div className={styles.single}>
-      <Header singleMode />
-      <div
-        className={styles.image}
-        style={{ backgroundImage: `url('${img}')` }}
-      />
-      <div className={styles.content}>
-        <div className={styles.triangle} />
-        <div className={styles.text}>
-          <small>{tags[0]}</small>
-          <h2>{title}</h2>
-          <p>{content}</p>
-        </div>
+console.log(prismes[0][0]);
+
+const Single = ({ location: { query: { article, prisme } } }) => (
+  <div className={styles.single}>
+    <Header pathname={`/prisme/${prisme}`} options />
+    <div
+      className={styles.image}
+      style={{ backgroundImage: `url('${prismes[prisme][article].img}')` }}
+    />
+    <div className={styles.content}>
+      <div className={styles.triangle} />
+      <div className={styles.text}>
+        <small>#{prismes[prisme][article].category}</small>
+        <h2>{prismes[prisme][article].title}</h2>
+        <p>{prismes[prisme][article].content}</p>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 Single.propTypes = {
   location: PropTypes.object.isRequired,

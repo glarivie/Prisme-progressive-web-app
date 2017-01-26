@@ -1,10 +1,12 @@
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
 
 import styles from './Article.css';
 
-const Article = ({ index, title, img, category, source }) => (
-  <div className={styles.single}>
+const Article = ({ index, title, img, category, source, goToSingle }) => (
+  <div
+    className={styles.single}
+    onClick={() => goToSingle(index)}
+  >
     <div
       className={styles.photo}
       style={{ backgroundImage: `url('${img}')` }}
@@ -22,6 +24,7 @@ Article.propTypes = {
   index: PropTypes.number.isRequired,
   category: PropTypes.string.isRequired,
   source: PropTypes.string.isRequired,
+  goToSingle: PropTypes.func.isRequired,
 };
 
 export default Article;

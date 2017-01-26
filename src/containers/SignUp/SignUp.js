@@ -26,7 +26,7 @@ class SignUp extends Component {
   render() {
     return (
       <div className={styles.signup}>
-        <Header title="CRÉER UN COMPTE" />
+        <Header title="CRÉER UN COMPTE" pathname="/sign-in" />
         <form onSubmit={this.handleSubmit}>
           <img
             src={profil}
