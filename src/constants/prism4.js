@@ -75,7 +75,7 @@ const prisme4 = [{
         </article>
     }, {
       title: 'Ces métiers que la smart city va inventer',
-      img: 'https://www.lesechos-events.fr/media/_uploads_versions/events/Gab_Bandeau-1200x420-SMART_CITIES_5IhuGZU_panoralarger.jpg',
+      img: 'http://img-0.journaldunet.com/TTzYrJR0P_fmiJOktHQr1jaAryY=/1280x/smart/image-cms/10258704.jpg',
       author: 'Matthieu Deleneuville',
       category: 'Economie',
       source: 'JDN',
