@@ -32,8 +32,12 @@ class App extends Component {
     dispatch(actions.app.updateWindowWidth(width));
   };
 
-  closeNav = () =>
-    this.props.dispatch(actions.app.toggleNav(false));
+  closeNav = () => {
+    const { dispatch } = this.props;
+
+    dispatch(actions.app.toggleNav(false));
+    document.body.style.overflow = 'visible';
+  }
 
   render() {
     const { children, isNavOpen } = this.props;

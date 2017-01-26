@@ -32,7 +32,9 @@ class Header extends Component {
 
   toggleNav = () => {
     const { isNavOpen, dispatch } = this.props;
+
     dispatch(actions.app.toggleNav(!isNavOpen));
+    document.body.style.overflow = 'hidden';
   };
 
   render() {
