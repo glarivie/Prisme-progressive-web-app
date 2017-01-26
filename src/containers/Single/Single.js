@@ -5,8 +5,6 @@ import Header from '../../components/Header';
 
 import prismes from '../../constants';
 
-console.log(prismes[0][0]);
-
 const Single = ({ location: { query: { article, prisme } } }) => (
   <div className={styles.single}>
     <Header pathname={`/prisme/${prisme}`} options />
