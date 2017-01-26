@@ -9,6 +9,8 @@ const brands = {
   Express: require('../assets/brands/icone_Express.png'),
   'Direct Matin': require('../assets/brands/icone_direct_matin.png'),
   Europe1: require('../assets/brands/icone_europe1.png'),
+  Slate: require('../assets/brands/vignette_Slate.png'),
+  Echos: require('../assets/brands/icone_echos.png'),
 };
 
 export default brands;
