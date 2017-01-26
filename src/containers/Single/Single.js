@@ -17,7 +17,7 @@ const Single = ({ location: { query: { article, prisme } } }) => (
       <div className={styles.text}>
         <small>#{prismes[prisme][article].category}</small>
         <h2>{prismes[prisme][article].title}</h2>
-        <p>{prismes[prisme][article].content}</p>
+        {prismes[prisme][article].content}
       </div>
     </div>
   </div>
