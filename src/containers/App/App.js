@@ -60,7 +60,7 @@ class App extends Component {
 }
 
 const mapStateToProps = ({ app }) => ({
-  isNavOpen: _.get(app, 'isNavOpen', true),
+  isNavOpen: _.get(app, 'isNavOpen', false),
 });
 
 export default connect(mapStateToProps)(App);
