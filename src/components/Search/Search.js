@@ -49,6 +49,7 @@ class Search extends Component {
     });
     dispatch(actions.app.toggleNav(false));
     browserHistory.push({ pathname, query });
+    document.body.style.overflow = 'visible';
   };
 
   render() {

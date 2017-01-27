@@ -15,6 +15,10 @@ class Prisme extends Component {
     params: PropTypes.object.isRequired,
   };
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   goToSingle = index => {
     const { params: { id } } = this.props;
 
