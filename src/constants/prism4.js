@@ -2,6 +2,8 @@ import React from 'react';
 
 const prisme4 = [{
   title: 'La «smart city» n’est pas si «smart» que ça',
+  prisme: 3,
+  article: 0,
   img: 'http://www.slate.fr/sites/default/files/styles/1090x500/public/lyon-confluence.jpg',
   author: 'Franck Gintrand, David Nguyen',
   category: 'Point negatif',
@@ -39,6 +41,8 @@ const prisme4 = [{
     </article>
   }, {
     title: 'Mais d\'où vient cette idée bizarre de « ville intelligente » ?',
+    prisme: 3,
+    article: 1,
     img: 'http://static.latribune.fr/full_width/436323/songdo.jpg',
     author: 'Francis Pisani',
     category: 'Histoire',
@@ -62,6 +66,8 @@ const prisme4 = [{
       </article>
     }, {
       title: 'Mais d\'où vient cette idée bizarre de « ville intelligente » ?',
+      prisme: 3,
+      article: 2,
       img: 'https://www.lesechos-events.fr/media/_uploads_versions/events/Gab_Bandeau-1200x420-SMART_CITIES_5IhuGZU_panoralarger.jpg',
       author: 'Agathe Mercante',
       category: 'Politique',
@@ -75,6 +81,8 @@ const prisme4 = [{
         </article>
     }, {
       title: 'Ces métiers que la smart city va inventer',
+      prisme: 3,
+      article: 3,
       img: 'http://img-0.journaldunet.com/TTzYrJR0P_fmiJOktHQr1jaAryY=/1280x/smart/image-cms/10258704.jpg',
       author: 'Matthieu Deleneuville',
       category: 'Economie',
@@ -121,6 +129,8 @@ const prisme4 = [{
         </article>
       }, {
         title: 'Smart Cities et Art Cities: 2 piliers du développement durable de la ville',
+        prisme: 3,
+        article: 4,
         img: 'http://images.atelier.net/sites/default/files/_illustrations/latelier-art-smartcity.jpg',
         author: 'Étienne Roché',
         category: 'Culture',
@@ -136,6 +146,8 @@ const prisme4 = [{
           </article>
       }, {
         title: 'Maslow et Laborit, urbanistes de la Smart City',
+        prisme: 3,
+        article: 5,
         img: 'http://images.atelier.net/sites/default/files/_illustrations/latelier-Pyramide.jpg',
         author: 'Étienne Roché',
         category: 'Sociologie',
@@ -154,6 +166,8 @@ const prisme4 = [{
           </article>
       }, {
         title: 'De Thomas More à Dubaï, existe-t-il encore des projets de cité utopique ?',
+        prisme: 3,
+        article: 6,
         img: 'http://img.aws.la-croix.com/2014/04/11/1135068/Des-XVIe-siecle-Thomas-More-decrit-Amaurote-capitale-pays-ideal-Utopia-Les-rues-mesurent-6-5-metres-large-habitants-travaillent-6-heures-jour-jouent-echecs-pendant-leur-temps-libre_2_730_491.jpg',
         author: 'Julien Duriez',
         category: 'Philosophie',

@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 import styles from './RightNav.css';
 import heart from '../../assets/coeur_blanc.svg';
-import loupe from '../../assets/loupe_blanc.svg';
+import Search from '../../components/Search'
 import FavoriteArticle from '../../components/FavoriteArticle';
 
 class RightNav extends Component {
@@ -19,14 +19,7 @@ class RightNav extends Component {
     return (
       <div className={styles.nav}>
         <div className={styles.inner}>
-          <header>
-            <img src={loupe} role="presentation" alt="loupe" />
-            <input
-              type="search"
-              name="search"
-              placeholder="Recherche"
-            />
-          </header>
+          <Search />
           <div className={styles.favoris}>
             <div className={styles.linethrough} />
             <div className={styles.content}>

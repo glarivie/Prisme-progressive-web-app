@@ -2,6 +2,8 @@ import React from 'react';
 
 const prisme2 = [{
     title: "Fessenheim : \"C'est une grosse opération d'enfumage\", dénonce Jadot",
+    prisme: 1,
+    article: 0,
     img: require('../assets/prism/p2-1-1.png'),
     author: 'Marc-Olivier Fogiel, Claire Gaveau',
     category: 'Environnement',
@@ -15,6 +17,8 @@ const prisme2 = [{
       </article>
     }, {
       title: "À Fessenheim, Sarkozy tire à boulets rouges contre le projet de fermeture du site",
+      prisme: 1,
+      article: 1,
       img: require('../assets/logo/figaro.png'),
       author: 'Charles Jaigu',
       category: 'Environnement',
@@ -30,6 +34,8 @@ const prisme2 = [{
       </article>
     }, {
       title: "Fessenheim : EDF ouvre la voie à l’arrêt de la centrale nucléaire",
+      prisme: 1,
+      article: 2,
       img: 'http://s2.lemde.fr/image/2017/01/24/534x0/5068218_6_d308_francois-hollande-s-etait-engage-a-fermer_1542e180a6e07670f842526acac5eff3.jpg',
       author: 'Jean-Michel Bezat',
       category: 'Environnement',
@@ -56,6 +62,8 @@ const prisme2 = [{
       </article>
     }, {
       title: "Fessenheim : une fermeture sans cesse repoussée",
+      prisme: 1,
+      article: 3,
       img: require('../assets/logo/francetv.png'),
       author: 'Louis San',
       category: 'Environnement',
@@ -77,6 +85,8 @@ const prisme2 = [{
       </article>
     }, {
       title: "Fessenheim: une fermeture qui reste 100% politique",
+      prisme: 1,
+      article: 4,
       img: 'http://static.lexpress.fr/medias_11303/w_2048,h_1146,c_crop,x_0,y_38/w_960,h_540,c_fill,g_north/v1485271918/photo-d-illustration-des-salaries-de-la-centrale-de-fessenheim-dans-une-salle-de-controle-le-14-novembre-2013_5787507.jpg',
       author: ' Laurent Martinet',
       category: 'Environnement',

@@ -2,6 +2,8 @@ import React from 'react';
 
 const prisme3 = [{
   title: "Tout savoir sur le revenu universel",
+  prisme: 2,
+  article: 0,
   img: 'http://static.directmatin.fr/sites/default/files/styles/image_880_495/public/revenu_universel.jpg?itok=bNESHcAD',
   author: 'NC',
   category: 'Social',
@@ -31,6 +33,8 @@ const prisme3 = [{
     </article>
   }, {
     title: "Le revenu universel de Benoît Hamon critiqué par Peillon, Valls, Montebourg et de Rugy",
+    prisme: 2,
+    article: 1,
     img: 'http://cdn1-europe1.new2.ladmedia.fr/var/europe1/storage/images/europe1/politique/le-revenu-universel-de-benoit-hamon-critique-par-peillon-valls-montebourg-et-de-rugy-2949032/30674162-1-fre-FR/Le-revenu-universel-de-Benoit-Hamon-critique-par-Peillon-Valls-Montebourg-et-de-Rugy.jpg',
     author: 'NC',
     category: 'Social',
@@ -46,6 +50,8 @@ const prisme3 = [{
       </article>
     }, {
       title: "Débat : Hamon attaqué de toutes parts sur son projet de revenu universel",
+      prisme: 2,
+      article: 2,
       img: 'http://i.f1g.fr/media/figaro/805x453_crop/2017/01/19/XVMc0f9ef44-de8b-11e6-8ab6-d8f11a55d89c.jpg',
       author: 'Marc de Boni',
       category: 'Social',
@@ -64,6 +70,8 @@ const prisme3 = [{
       </article>
     }, {
       title: "Quand Montebourg ne jurait que par le revenu universel, 'nouvel humanisme'",
+      prisme: 2,
+      article: 3,
       img: 'http://www.marianne.net/sites/default/files/styles/article/public/14008-100249107.jpg?itok=gzQudFU',
       author: 'Etienne Girard',
       category: 'Social',
@@ -84,6 +92,8 @@ const prisme3 = [{
       </article>
     }, {
       title: "Montebourg attaque le revenu universel : \"T'as pas le droit, c'est pas sérieux\", réplique Hamon",
+      prisme: 2,
+      article: 4,
       img: require('../assets/logo/rtl.png'),
       author: 'Ludovic Galtier',
       category: 'Social',
@@ -97,6 +107,8 @@ const prisme3 = [{
         </article>
       }, {
         title: "Le revenu universel est «  une aide à l’emploi, à l’entrepreneuriat », selon J.-L. Bennahmias",
+        prisme: 2,
+        article: 5,
         img: 'http://www.marianne.net/sites/default/files/styles/article/public/14008-100249107.jpg?itok=gzQudFU',
         author: 'Etienne Girard',
         category: 'Social',
